@@ -1,8 +1,10 @@
 {
-    "manifest_version": 3,
-    "name": "Metronome",
-    "version": "2.8",
-    "description": "metronome extension",
+    "name": "Metronome PWA",
+    "short_name": "Metronome",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
     "icons": {
         "16": "./icons/metronome2.png",
         "32": "./icons/metronome2.png",
@@ -14,10 +16,6 @@
             "16": "./icons/metronome2.png",
             "32": "./icons/metronome.png",
             "48": "./icons/metronome.png"
-        },
-        "default_title": "Metronome"
-    },
-    "background": {
-        "service_worker": "background.js"
+        }
     }
 }
