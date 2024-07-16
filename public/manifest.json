@@ -1,21 +1,32 @@
 {
     "name": "Metronome PWA",
     "short_name": "Metronome",
+    "description": "Use this free metronome and make your practice routine.",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "icons": {
-        "16": "./icons/metronome2.png",
-        "32": "./icons/metronome2.png",
-        "48": "./icons/metronome.png",
-        "128": "./icons/metronome.png"
-    },
-    "action": {
-        "default_icon": {
-            "16": "./icons/metronome2.png",
-            "32": "./icons/metronome.png",
-            "48": "./icons/metronome.png"
+    // "icons": {
+    //     "16": "./icons/metronome2.png",
+    //     "32": "./icons/metronome2.png",
+    //     "48": "./icons/metronome.png",
+    //     "128": "./icons/metronome.png"
+    // },
+    "icons": [
+        {
+            "src": "./icons/metronome.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "./icons/metronome.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/metronome.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
-    }
+    ]
 }

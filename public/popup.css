@@ -5,6 +5,7 @@ body {
     /* background-color: #9dddfc57; */
     background-color: #cae3ef57;
     text-align-last: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
