@@ -2,7 +2,8 @@ body {
     font-family: auto;
     padding: 7px;
     margin: 0;
-    background-color: #cae3ef57;
+    /* background-color: #cae3ef57; */
+    background-color: #98e40057;
     text-align-last: center;
     -webkit-font-smoothing: antialiased;
 }
