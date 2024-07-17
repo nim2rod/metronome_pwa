@@ -130,7 +130,7 @@ button {
 
 .input-cont {
     display: flex;
-    gap: 8px;
+    gap: 83px;
     justify-content: center;
     align-items: normal;
     margin-top: 3px;
@@ -170,7 +170,7 @@ button {
     border-radius: 0.4em;
     color: #355d76;
     font-size: 1.3em;
-    width: 167px;
+    width: 190px;
 }
 
 .input-song::placeholder {
