@@ -70,6 +70,7 @@ function changeClass(id, action, flag, boolean) {
 init()
 function init() {
     audio = new Audio(soundSetting.primaryClick)
+    document.querySelector('.bpm-show').innerHTML = document.getElementById("bpm").value
     let stopIcon = document.getElementById('stop');
     stopIcon.style.display = `none`
 
@@ -334,12 +335,14 @@ document.getElementById('plus').addEventListener('click', bpmChange);
 document.getElementById('volumeUp').addEventListener('click', volumeChange);
 document.getElementById('volumeDown').addEventListener('click', volumeChange);
 document.getElementById('add-song').addEventListener('click', addSong);
-document.getElementById('silent-mode').addEventListener('click', () => {
-    divisionSetting.silentBeatMode = !divisionSetting.silentBeatMode
-    if (divisionSetting.silentBeatMode) document.querySelector('.silent-mode').classList.add('active')
-    else document.querySelector('.silent-mode').classList.remove('active')
-    start()
-})
+
+// silent mode:
+// document.getElementById('silent-mode').addEventListener('click', () => {
+//     divisionSetting.silentBeatMode = !divisionSetting.silentBeatMode
+//     if (divisionSetting.silentBeatMode) document.querySelector('.silent-mode').classList.add('active')
+//     else document.querySelector('.silent-mode').classList.remove('active')
+//     start()
+// })
 // input song change color of + button  
 document.addEventListener('DOMContentLoaded', function () {
     var input = document.getElementById('input-song');
@@ -368,6 +371,7 @@ let tapTempoTimes = [];
 let lastTimeClicked = 0;
 
 tapTempoButton.addEventListener('click', function () {
+    console.log('tap tempo')
     let tempo
     const now = performance.now();
     if (lastTimeClicked !== 0) {
@@ -389,7 +393,6 @@ tapTempoButton.addEventListener('click', function () {
         }
         start()
     }
-
 });
 
 const bpmDivides = document.querySelectorAll('.divide-box span');
