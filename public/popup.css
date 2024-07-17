@@ -4,6 +4,9 @@ body {
     margin: 0;
     text-align-last: center;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 img {
@@ -30,6 +33,11 @@ button {
     display: flex;
     justify-content: center;
     gap: 49px;
+    margin-top: 1.5em;
+}
+
+.cont-1 img {
+    height: 7em;
 }
 
 .cont-2 {
@@ -48,7 +56,7 @@ button {
 
 .bpm-show {
     border: solid 1px #b6d3e7;
-    height: 47px;
+    /* height: 47px; */
     font-size: 3.5em;
     border-radius: 4px;
     color: #355d76;
@@ -162,8 +170,7 @@ button {
     border-radius: 0.4em;
     color: #355d76;
     font-size: 1.3em;
-    /* margin-top: 5px; */
-    width: 113px;
+    width: 167px;
 }
 
 .input-song::placeholder {
@@ -177,6 +184,8 @@ button {
 
 .add-song {
     background-color: #b6d3e7bf;
+    height: 1.5em;
+    align-self: center;
 }
 
 .add-song.active {
